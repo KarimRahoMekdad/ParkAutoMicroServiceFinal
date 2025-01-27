@@ -6,6 +6,8 @@ services:
       - "8080:8080"
     networks:
       - gateway
+    depends_on:
+      - mysql-db
 
   clientservice:
     image: clientimage
@@ -14,6 +16,8 @@ services:
       - "8081:8081"
     networks:
       - gateway
+    depends_on:
+      - mysql-db
 
   vehiculesservice:
     image: vehiculesimage
@@ -22,6 +26,8 @@ services:
       - "8082:8082"
     networks:
       - gateway
+    depends_on:
+      - mysql-db
 
   locationservice:
     image: locationimage
@@ -30,7 +36,24 @@ services:
       - "8083:8083"
     networks:
       - gateway
+    depends_on:
+      - mysql-db
+
+  mysql-db:
+    image: mysql:8.0
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+    ports:
+      - "3306:3306"
+    networks:
+      - gateway
+    volumes:
+      - mysql-data:/var/lib/mysql
 
 networks:
   gateway:
     driver: bridge
+
+volumes:
+  mysql-data:
