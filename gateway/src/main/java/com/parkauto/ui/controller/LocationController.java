@@ -4,9 +4,9 @@ import com.parkauto.ui.dto.ClientDTO;
 import com.parkauto.ui.dto.LocationDTO;
 import com.parkauto.ui.dto.VehiculeDTO;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
+// import java.util.ArrayList;
+// import java.util.List;
+// import java.util.stream.Collectors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.Arrays;        // Pour Arrays.stream()
-import java.util.List;          // Pour List
-import java.util.stream.Collectors; // Pour Collectors.toList()
+// import java.util.Arrays;        // Pour Arrays.stream()
+// import java.util.List;          // Pour List
+// import java.util.stream.Collectors; // Pour Collectors.toList()
 
 @Controller
 public class LocationController {
