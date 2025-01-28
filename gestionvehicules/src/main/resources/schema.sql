@@ -1,9 +1,10 @@
-CREATE TABLE "vehicule" (
-    "idvehicule" BIGINT AUTO_INCREMENT PRIMARY KEY,
-    "anneeModel" INT NOT NULL,
-    "prix" DOUBLE NOT NULL,
-    "imageVehicule" VARCHAR(255)
+CREATE TABLE vehicule (
+    idvehicule BIGINT AUTO_INCREMENT PRIMARY KEY,
+    anneeModel INT NOT NULL,
+    prix DOUBLE NOT NULL,
+    imageVehicule VARCHAR(255)
 );
+
 
 -- CREATE TABLE "voiture" (
 --     "IDVEHICULE" BIGINT PRIMARY KEY,
