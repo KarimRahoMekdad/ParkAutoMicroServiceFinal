@@ -1,5 +1,5 @@
 CREATE TABLE "vehicule" (
-    "idvehicule" BIGINT PRIMARY KEY,
+    "idvehicule" BIGINT AUTO_INCREMENT PRIMARY KEY,
     "anneeModel" INT NOT NULL,
     "prix" DOUBLE NOT NULL,
     "imageVehicule" VARCHAR(255)

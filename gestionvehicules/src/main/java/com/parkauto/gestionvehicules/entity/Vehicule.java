@@ -4,6 +4,8 @@ package com.parkauto.gestionvehicules.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 // import jakarta.persistence.GeneratedValue;
 // import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -23,6 +25,7 @@ import lombok.NoArgsConstructor;
 @Builder // Permet de construire des objets en utilisant un pattern Builder
 public class Vehicule {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "IDVEHICULE")
     private Long idvehicule;
 
