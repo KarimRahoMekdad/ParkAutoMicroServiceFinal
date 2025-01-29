@@ -2,7 +2,7 @@ CREATE TABLE vehicule (
     idvehicule BIGINT AUTO_INCREMENT PRIMARY KEY,
     anneeModel INT NOT NULL,
     prix DOUBLE NOT NULL,
-    imageVehicule VARCHAR(255)
+    image_vehicule VARCHAR(255)
 );
 
 
